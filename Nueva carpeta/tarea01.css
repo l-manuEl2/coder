@@ -1,0 +1,37 @@
+header{
+    background-image: url(../img/fondo-gym.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+   
+    
+}
+
+h1{
+    color: brown;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: medium;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+p{
+    color: tomato;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+main{
+    color: blue;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: overline;
+}

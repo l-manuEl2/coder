@@ -1,0 +1,315 @@
+.container {
+    display: grid;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.container {
+    display: grid;
+    grid-template-rows: 100px 200px;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+/**/
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    row-gap: 20px;
+}
+/**/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 200px;
+    grid-template-areas:
+        "header header header"
+        "sidebar main .";
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+/**/
+.item {
+    grid-column: 2 / 4;
+}
+
+.item {
+    grid-row: 1 / 3;
+}
+/**/
+
+.item {
+    grid-area: 1 / 2 / 3 / 4;
+}
+/**/
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.item1 {
+    grid-column: 1 / 3;
+}
+
+.item2 {
+    grid-row: 2 / 4;
+}
+
+.item3 {
+    grid-area: 1 / 3 / 3 / 5;
+}
+/*posicionar elemento*/
+/*ejemplo 3*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    justify-items: center;
+    align-items: start;
+    justify-content: space-between;
+    align-content: space-evenly;
+}
+/**/
+.container {
+    display: grid;
+    justify-items: center;
+    
+}
+.container {
+    display: grid;
+    align-items: end;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+.container {
+    display: grid;
+    justify-items: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    align-content: space-around;
+}
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    align-content: space-around;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    justify-items: center;
+    align-items: start;
+    justify-content: space-between;
+    align-content: space-evenly;
+}
+/* Estilos para dispositivos móviles */
+body {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Media query para tabletas */
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+
+/* Media query para computadoras de escritorio */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+/*ejemplo de media*/
+/*ASÍ SI :*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 200px;
+    grid-template-areas:
+        "header header header"
+        "sidebar main .";
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+/**/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.item1 {
+    grid-column: 1 / 3;
+}
+
+.item2 {
+    grid-row: 2 / 4;
+}
+
+.item3 {
+    grid-area: 1 / 3 / 3 / 5;
+}
+/**/
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    justify-items: center;
+    align-items: start;
+    justify-content: space-between;
+    align-content: space-evenly;
+}
+/**/
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Diseño Responsive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Media query para tabletas */
+        @media (min-width: 600px) {
+            body {
+                font-size: 18px;
+                padding: 20px;
+            }
+
+            .navbar {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        /* Media query para computadoras de escritorio */
+        @media (min-width: 1024px) {
+            body {
+                font-size: 20px;
+                padding: 30px;
+            }
+
+            img {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1>Bienvenidos a nuestro sitio</h1>
+            <p>Este es un ejemplo de diseño responsive que se adapta a diferentes tamaños de pantalla.</p>
+        </div>
+        <img src="https://via.placeholder.com/800" alt="Ejemplo de imagen">
+    </div>
+</body>
+</html>

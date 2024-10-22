@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="./flexbox2.css">
+</head>
+<body>
+    1
+    <div class="content-box">Contenido del elemento</div>
+    2
+    <div class="padding-box">Contenido con Padding</div>
+    3
+    <div class="border-box">Contenido con Border</div>
+    4
+    <div class="margin-box">Contenido con Margin</div>
+    5
+    <div class="box-model">Box Model Completo</div>
+    6
+    <!--DISPLAY-->
+    1
+    <div class="block-element">Elemento de Bloque</div>
+    <p class="block-element">Este es un párrafo.</p>
+    2
+    <span class="inline-element">Elemento en Línea</span>
+    <a href="#" class="inline-element">Enlace</a> 
+    <!--display inline-block--> 
+    <div class="inline-block-element">Elemento Inline-Block</div>
+    <!--position static-->
+    <div class="static-box">Elemento Estático</div>
+    <!--position relative--> 
+    <div class="relative-box">Elemento Relativo</div>
+    <!--position absolute-->
+    <div class="container">
+        <div class="absolute-box">Elemento Absoluto</div>
+    </div>
+    <!--position fixed-->
+    <div class="fixed-box">Elemento Fijo</div>
+    <!--position stiky-->
+    <div class="sticky-container">
+        <div class="sticky-box">Elemento Sticky</div>
+        <p>Contenido de ejemplo...</p>
+    </div> 
+    <!--display: flex-->
+    <div class="flex-container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    <div class="contenedor">
+        <div class="caja">1</div>
+        <div class="caja">2</div>
+        <div class="caja">3</div>
+
+    </div>
+    <!--order-->
+    <div class="flex-container">
+        <div class="item" style="order: 2;">Item 1</div>
+        <div class="item" style="order: 1;">Item 2</div>
+        <div class="item" style="order: 3;">Item 3</div>
+    </div>
+    <!-- flex-grow-->
+    
+    <div class="flex-container">
+        <div class="item" style="flex-grow: 1;">Item 1</div>
+        <div class="item" style="flex-grow: 2;">Item 2</div>
+        <div class="item" style="flex-grow: 1;">Item 3</div>
+    </div>
+    <!--flex-shrink-->
+<div class="flex-container">
+    <div class="item" style="flex-shrink: 1;">Item 1</div>
+    <div class="item" style="flex-shrink: 3;">Item 2</div>
+    <div class="item" style="flex-shrink: 1;">Item 3</div>
+</div>
+<!--flex-basis-->>
+<div class="flex-container">
+    <div class="item" style="flex-basis: 100px;">Item 1</div>
+    <div class="item" style="flex-basis: 150px;">Item 2</div>
+    <div class="item" style="flex-basis: 100px;">Item 3</div>
+</div>
+</body>
+</html>

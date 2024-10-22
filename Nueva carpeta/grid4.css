@@ -1,0 +1,11 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+.grid-item {
+    border: 1px solid #181717; /* Agrega un borde de 1px de color gris claro */
+    padding: 20px;
+  }
+
+  

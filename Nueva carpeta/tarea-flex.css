@@ -1,0 +1,87 @@
+header{
+    background-attachment: fixed;
+    background-image: url(../img/fondo-gym.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    width: 100%;
+    
+}
+h1.h2,h3{
+    color: teal;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: rgb(241, 72, 5);
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-style: italic;
+}
+ul{
+    text-align: left;
+    color: gold;
+    text-decoration: overline;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+
+
+/*de aca en adelante es importante*/
+.sticky-container{
+    height: 1000px;
+    background-color: blue;
+}
+/*se queda en la pantalla*/
+.sticky-box{
+    position: sticky;
+    top:10px;
+    background-color: greenyellow;
+    padding: 10px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-container{
+    display: flex;
+    flex-flow:row wrap;
+}
+.contenedorFlex{
+    display: flex;
+   
+}
+.cardProducto{
+    background-color: rgb(255, 153, 0);
+    width: 100%;
+
+}
+h3{
+    text-align: center;
+}
+.contenedorFlex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cardProducto img{
+    width: 100%;
+    display: flex;
+}
+tengo queponer en fila y no me sale ¿qué hago?

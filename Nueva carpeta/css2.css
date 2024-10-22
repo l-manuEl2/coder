@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.container-anuncio{
+    background-color: yellow;
+}
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+header .boton{
+    color: rgb(201, 68, 6);
+    margin-right: 15px;
+}
+header nav a {
+    color: green;
+    text-decoration: none;
+}
+.elemento-bloque span{
+    color: yellow;
+}
+section p{
+    color: white;
+    text-align: center;font-family: Arial, Helvetica, sans-serif;
+}
+section p span{
+    background-color: yellow;
+    color: black;
+    padding: 2px 4px;
+    border-radius: 3px;
+
+}
+.dos{
+    color: white;
+}
+header{
+    border-bottom: 2px solid white;
+}
+ul li a{
+    margin: 5px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.anuncio{
+    background-color: yellow;
+    padding: 5px;
+}
+.anuncio p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+header{
+    border-bottom: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header div{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.botones{
+  margin-right: 15px; 
+  color: white;  
+}
+.boton-section{
+    background-color: rgb(27, 27, 27);
+    color: rgb(158, 235, 15);
+    text-decoration: none ;
+    border: 1px white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+.boton-container{
+    
+    display: flex;
+    justify-content: center ;
+}
+.section-container{
+    margin: 25px;
+    
+    display: flex;
+}
+.div-1 h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+.div-1{
+   
+    color: black;
+    text-decoration: none;
+    
+    padding: 5px;
+    border-radius: 5px;
+    align-self: center;
+}
+.div-2{
+    background-color: yellow;
+    margin-top: 3rem;
+}
+.div-2 img{
+    width: 25rem;
+}
+.div-1 .parrafo-2{
+    text-align: start;
+    margin-top: 15px;
+}
+.div-1 a{
+    color: black;
+    text-decoration: none;
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+}
