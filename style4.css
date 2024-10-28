@@ -3,16 +3,13 @@
     padding: 0;
 }
 body{
-    background-image: url(../../../img/fondo-gym.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    height: 95vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
+}
+h1, h2, ul, h3{
+    color: white;
 }
 .navegacion ul li a{
-    color: black;
+    color: rgb(247, 242, 242);
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -27,6 +24,7 @@ h2 span{
     padding: 3px 4px 3px 4px;
     border-radius: 5px;
     margin: 5px;
+    color: black;
 }
 ul{
     list-style-type: none;
@@ -43,20 +41,21 @@ h2{
     background-color: orange;
     padding: 5px;
     position: sticky;
-    top: 10px;
+    top: 2px;
     display: block;
 
 }
 .anuncio p{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 h3{
     font-family: Arial, Helvetica, sans-serif;
     margin: 5px;
     text-align: center;
 }
-p{
+section p{
     font-family: Arial, Helvetica, sans-serif;
     margin: 5px;
 }
@@ -161,3 +160,195 @@ header{
     height: 200px; /* ajusta el alto según sea necesario */
     
   }
+  .grid-container{
+   
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows:repeat(3, 175px) ;
+    gap: 15px;
+    
+  }
+  
+  .item-1{
+    background-color: white;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    padding: 25px;
+    border-radius: 5px;
+
+  }
+  .item-2{
+    background-color:white;
+    grid-column: 3/5;
+    grid-row: 1/4;
+    padding: 25px;
+    border-radius: 5px;
+  }
+  .item-3{
+    background-color: white;
+    grid-column: 1/3;
+    padding: 25px;
+    border-radius: 5px;
+  }
+  .item-1.color1 h4 p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+  }
+  .item-1 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .imagenes4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+   .barra p{
+    color: rgb(8, 8, 8);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+   }
+   .barra{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .grid-area{
+    border: 1px solid white;
+    margin: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 190px);
+    grid-template-areas:
+    "caja1 caja1 caja2 caja2"
+    "caja3 caja3 caja2 caja2"
+    "caja3 caja3 caja2 caja2" ;
+    gap: 35px 40px;
+   }
+   .grid-tem01{
+    background-color: red;
+    grid-area: caja1;
+   }
+   .grid-tem02{
+    background-color:blue ;
+    grid-area: caja2;
+   }
+   .grid-tem03{
+    background-color: yellow;
+    grid-area: caja3;
+   }
+   .barra5{
+    color: rgb(8, 8, 8);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+   }
+   .grid-item03 {
+    color: rgb(8, 8, 8);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+   }
+   .grid-item01 {
+    color: rgb(8, 8, 8);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+   }
+   .grid-item02 {
+    color: rgb(8, 8, 8);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+   }
+   .grird-item01 img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   footer p{
+    color: white;
+   }
+   .parrafo{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    margin: 20px;
+    padding: 15px;
+   }
+   .triceps3{
+    display: flex;
+    justify-content: center;
+    
+
+   }
+   .triceps3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+  
+
+  footer{
+    margin: 15px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+  }
+  
+  .descuento {
+    color: rgb(124, 124, 121);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: line-through;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+  .precio-final{
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+
+  }
+  .porsentaje{
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+  .triceps {
+    border-radius: 5px;
+    
+  }
+  .centro{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 320px) and (min-width: 768px){
+    .triceps3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        text-align: center;
+        font-size: small;
+        display: block;
+        
+    }
+    .mancuernas{
+        background-color: red;
+    }
