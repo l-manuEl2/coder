@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+.subtitulo3 h1{
+  text-decoration: none;
+}
 body{
     background-color: black;
 }
@@ -37,13 +40,12 @@ ul li{
 h2{
     font-family: Arial, Helvetica, sans-serif;
 }
-.anuncio{
-    background-color: orange;
-    padding: 5px;
-    position: sticky;
-    top: 2px;
-    display: block;
 
+
+}
+.position-absolute{
+  position: fixed;
+  width: 100%;  
 }
 .anuncio p{
     text-align: center;
@@ -138,7 +140,7 @@ header{
 .div-1 a{
     color: black;
     text-decoration: none;
-    background-color: yellow;
+    background-color: white;
     padding: 5px;
     border-radius: 5px;
 
@@ -228,16 +230,26 @@ header{
     gap: 35px 40px;
    }
    .grid-tem01{
-    background-color: red;
+    background-color: white;
     grid-area: caja1;
+    gap: 10px;
+    margin: 20px;
+    padding: 10px;
    }
    .grid-tem02{
-    background-color:blue ;
+    background-color:white ;
     grid-area: caja2;
+    gap: 10px;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
    }
    .grid-tem03{
-    background-color: yellow;
+    background-color: white;
     grid-area: caja3;
+    gap: 10px;
+    margin: 20px;
+    padding: 10px;
    }
    .barra5{
     color: rgb(8, 8, 8);
@@ -288,6 +300,8 @@ header{
    .triceps3{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
     
   }
   
@@ -336,19 +350,97 @@ header{
     align-items: center;
     text-align: center;
   }
-  
-  @media screen and (min-width: 320px) and (min-width: 768px){
-    .triceps3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  .parrafo-3{
+    color: white;
+  }
+  .subtitulo-2{
+    color: black;
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 4px;
+  }
+  .main section img{
+    background-color: red;
+    color: yellow;
+    flex-direction: column;
+  }
+  .section-container img{
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+  }
+  .main2 .biceps{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    
+    
+  }
+.color{
+  color: white;
+}
+ 
+  @media only screen and (max-width: 320px) {
+    body {
+      font-size: 16px;
     }
-    nav ul {
-        text-align: center;
-        font-size: small;
-        display: block;
-        
+    
+   
+    
+    img {
+      width: 100%;
+      height: auto;
     }
-    .mancuernas{
-        background-color: red;
+    
+    p {
+      font-size: 14px;
+      line-height: 1.5;
     }
+    .section-container{
+      flex-direction: column;
+    }
+    main section img {
+      display: flex;
+      grid-template-rows: row;
+
+    }
+    .parrafo-3{
+      color: white;
+    }
+    section img{
+      grid-template-rows: row;
+      display grid-row:100px 100px 100px;
+      text-align: center;
+      align-items:centro;
+     
+    }
+    main section img{
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      
+      
+    }
+   
+  }
+  @media screen and (max-width: 425px ){
+    .mancuernas img{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items:center;
+    }
+    p{
+      display: flex;
+      flex-direction: column;
+      
+    }
+      
+  }
+ 
