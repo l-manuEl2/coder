@@ -1,0 +1,25 @@
+@mixin boton{
+    background-color: red ;
+    text-decoration:none ;
+    color:white ;
+    border-radius:15px ;
+    padding:10px 25px;
+}
+@mixin boton-varaibles($bg-color, $color-texto, $padding, $b-radius, $fuente){
+    background-color:$bg-color ;
+    color:$color-texto ;
+    padding: $padding;
+    border-radius: $b-radius;
+    font-family: $fuente;
+
+}
+
+
+mixin-botones{
+    .boton02{
+        @include boton;
+    }
+    .boton03{
+        @include boton-varaibles(yellow, black,10px 15px , 15px,Arial )
+    }
+}

@@ -1,8 +1,14 @@
+@import "../utilities/variables";
+
+@mixin header-flex($display, $align, $justify){
+    display: $display;
+    align-items: $align;
+    justify-content: $justify
+}
+
 header{
     border-bottom: 1px solid gray;
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
+   @include header-flex(flex,center ,space-around )
     img{
         width: 8rem;
     }
@@ -14,8 +20,8 @@ header{
             margin: 5px;
             a{
                 font-size: 14px;
-                color:white;
-                font-family: Arial, Helvetica, sans-serif;
+                color:$color-blanco
+                font-family:$fuente-prinsipal
                 text-decoration: none;
             }
             
@@ -31,9 +37,10 @@ header{
     a{
       margin-right: 15px;
       font-size: 14px;
-      color: white;
+      color:$color-blanco
+      
       text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif;  
+      font-family:$fuente-prinsipal  
     }
 }
 body{
