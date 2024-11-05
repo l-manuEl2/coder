@@ -391,7 +391,9 @@ header{
  .color{
   color: white;
 }
- 
+ .mancuernas img{
+  background-color: lightgreen;
+ }
 
 /* @media only screen and (max-width: 320px ){
   .mancuernas img{
