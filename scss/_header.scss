@@ -1,0 +1,47 @@
+header{
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    img{
+        width: 8rem;
+    }
+} nav{
+    ul{
+        list-style: none;
+        display: flex;
+        li{
+            margin: 5px;
+            a{
+                font-size: 14px;
+                color:white;
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: none;
+            }
+            
+        }
+    }
+}
+.container-plataforma{
+    display: flex;
+    align-items: center;
+    img{
+        width: 5rem;
+    }
+    a{
+      margin-right: 15px;
+      font-size: 14px;
+      color: white;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;  
+    }
+}
+body{
+    h1{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+}
+ 
