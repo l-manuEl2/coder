@@ -1,0 +1,54 @@
+@import "../utilities/variables";
+
+@mixin header-flex($display, $align, $justify){
+    display: $display;
+    align-items: $align;
+    justify-content: $justify
+}
+
+header{
+    border-bottom: 1px solid gray;
+   @include header-flex(flex,center ,space-around )
+    img{
+        width: 8rem;
+    }
+} nav{
+    ul{
+        list-style: none;
+        display: flex;
+        li{
+            margin: 5px;
+            a{
+                font-size: 14px;
+                color:$color-blanco
+                font-family:$fuente-prinsipal
+                text-decoration: none;
+            }
+            
+        }
+    }
+}
+.container-plataforma{
+    display: flex;
+    align-items: center;
+    img{
+        width: 5rem;
+    }
+    a{
+      margin-right: 15px;
+      font-size: 14px;
+      color:$color-blanco
+      
+      text-decoration: none;
+      font-family:$fuente-prinsipal  
+    }
+}
+body{
+    h1{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+}
+ 

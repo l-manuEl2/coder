@@ -1,0 +1,48 @@
+@media screen and (min-width: 640px){
+    
+    .triceps-2{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+    .biceps img{
+      align-items: center;
+      text-align: center;
+      
+      
+      
+    
+    }
+    .biceps{
+      margin: 10px;
+    }
+    h3 {
+        span{
+            .parrafo{
+                justify-content: end;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: aqua;
+            
+              }
+        }
+    }
+    .div-2 {
+        img{
+            width: 50%;
+    }
+      
+    }
+    .section-container{
+      display:flex;
+  
+      flex-direction: column;
+      align-items: start;
+    }
+     .triceps {
+    margin: 10px;
+  }
+  
+    }
+    

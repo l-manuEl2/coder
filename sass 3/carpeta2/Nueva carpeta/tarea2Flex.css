@@ -1,0 +1,32 @@
+h1{
+    border: 1px solid red;
+    padding: 2rem;
+    padding: 2rem 1rem 5rem 3rem ;
+}
+.caja1,.caja2{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(126, 39, 5);
+    border: 2px solid black;
+}
+.caja2{
+    background-color: rgb(17, 163, 248);
+    position: relative;
+    top: 5rem;
+    align-items: flex-end;
+}
+.caja1{
+    position: relative;
+    top: 2rem;
+    right: -2rem;
+    align-items: flex-end;
+}
+*{
+    scroll-behavior: smooth;
+}
+img{
+    width: 10rem;
+}
+.contenedor{
+    display:flex
+}
