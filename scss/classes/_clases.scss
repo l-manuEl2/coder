@@ -1,3 +1,17 @@
+body{
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.filas{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+
 .titulo2{
     text-decoration: none;
   }
@@ -358,3 +372,11 @@
  .h3{
     color: white;
  }
+ .main2{
+  .triceps-2{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+  }
+}

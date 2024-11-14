@@ -9,6 +9,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.filas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .titulo2 {
   text-decoration: none;
 }
@@ -355,6 +366,12 @@ footer p {
   color: white;
 }
 
+.main2 .triceps-2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 body {
   background-color: black;
 }
@@ -448,30 +465,115 @@ header {
   padding: 10px;
 }
 
-@media screen and (min-width: 320px) {
-  .anuncio {
-    display: flex;
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .ejercicio {
+    align-self: flex-end;
   }
-  .triceps-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .polea {
+    align-self: flex-end;
   }
-  .biceps {
+  .imagenes4 {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+    row-gap: 25px;
+  }
+  .grid-container img {
     width: 100%;
+    justify-content: space-between;
+    margin: 25px;
   }
-  .triceps {
+  .grid-container video {
     width: 100%;
+    justify-content: space-between;
+    margin: 25px;
   }
-  .section-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .grid-container h1 {
+    margin: 25px;
+    align-self: flex-start;
   }
-  .div-2 img {
-    width: 100%;
+  .grid-container p {
+    align-self: flex-end;
+  }
+  .item-1 {
+    grid-column: 1/2;
+    gap: 25px;
+    row-gap: 25px;
+    padding: 25px;
+  }
+  .item-1 h1 {
+    margin: 25px;
+  }
+  .item-2 {
+    grid-column: 1/2;
+    gap: 25px;
+    row-gap: 25px;
+    padding: 25px;
+  }
+  .item-2 h1 {
+    margin: 25px;
+  }
+  .item-3 {
+    grid-column: 1/2;
+    gap: 25px;
+    row-gap: 25px;
+    padding: 25px;
+  }
+  .item-3 h1 {
+    margin: 25px;
+  }
+  .grid-area {
+    border: 10x solid white;
+    margin: 25px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "gym-1" "gym-2" "gym-3";
+  }
+  .grid-tem01 {
+    grid-area: gym-1;
+  }
+  .grid-tem02 {
+    grid-area: gym-2;
+  }
+  .grid-tem03 {
+    grid-area: gym-3;
   }
 }
+.anuncio {
+  display: flex;
+}
+
+.triceps-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.biceps {
+  width: 100%;
+}
+
+.triceps {
+  width: 100%;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div-2 img {
+  width: 100%;
+}
+
 main {
   margin: 10px;
   justify-content: space-between;
