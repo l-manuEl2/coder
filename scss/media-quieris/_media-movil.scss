@@ -1,5 +1,10 @@
 @media screen and (min-width: 320px) and (max-width: 768px){
- 
+ header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+ }
   .ejercicio{
     align-self: flex-end;
   }
@@ -80,6 +85,10 @@
   }
   .grid-tem02{
     grid-area: gym-2;
+    video{
+      width: 40%;
+          
+    }
   }
   .grid-tem03{
     grid-area: gym-3;

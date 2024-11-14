@@ -373,7 +373,7 @@ footer p {
 }
 
 body {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 header {
@@ -466,6 +466,12 @@ header {
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
   .ejercicio {
     align-self: flex-end;
   }
@@ -541,6 +547,9 @@ header {
   }
   .grid-tem02 {
     grid-area: gym-2;
+  }
+  .grid-tem02 video {
+    width: 40%;
   }
   .grid-tem03 {
     grid-area: gym-3;
