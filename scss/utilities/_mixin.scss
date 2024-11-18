@@ -1,0 +1,15 @@
+@mixin boton{
+    background-color:red ;
+    text-decoration:none ;
+    color:white ;
+    border-radius:15px  ;
+    padding:5px ;
+
+}
+
+.mixin-botones{
+    .boton-2{
+        @include boton; 
+    }
+
+}

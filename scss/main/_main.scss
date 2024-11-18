@@ -13,3 +13,23 @@ h3{
 h2{
     color: white;
 }
+main h2{
+    transition: 2s;
+}
+main h2:hover{
+    margin-left: 50%;
+}
+.biceps{
+    transition: 1s;
+}
+.biceps:active{
+    width: 5rem;
+}
+main section img{
+    transition: 1s;
+}
+main section img:hover{
+    width: 18rem;
+}
+
+

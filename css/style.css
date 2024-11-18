@@ -20,6 +20,14 @@ body {
   align-items: center;
 }
 
+.formulario-1 {
+  color: white;
+}
+
+.background {
+  background-size: cover;
+}
+
 .titulo2 {
   text-decoration: none;
 }
@@ -379,8 +387,8 @@ body {
 header {
   background-color: black;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   border-bottom: 2px solid white;
 }
@@ -465,12 +473,39 @@ header {
   padding: 10px;
 }
 
+header a {
+  transition: 1s;
+}
+
+header a:hover {
+  margin: 15px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  .videos {
+    width: 100%;
+  }
   header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+  }
+  header h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+  header img {
+    width: 50%;
+  }
+  header ul li {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
   }
   .ejercicio {
     align-self: flex-end;
@@ -600,6 +635,30 @@ h2 {
   color: white;
 }
 
+main h2 {
+  transition: 2s;
+}
+
+main h2:hover {
+  margin-left: 50%;
+}
+
+.biceps {
+  transition: 1s;
+}
+
+.biceps:active {
+  width: 5rem;
+}
+
+main section img {
+  transition: 1s;
+}
+
+main section img:hover {
+  width: 18rem;
+}
+
 footer {
   border-top: 2px solid gray;
   margin: 15px;
@@ -641,6 +700,51 @@ footer p {
   .triceps {
     margin: 10px;
   }
+}
+.section-botones {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+.section-botones .boton-1, .section-botones a:last-child {
+  background-color: blue;
+  padding: 15px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.section-botones a:last-child {
+  margin-left: 15px;
+}
+
+.mixin-botones .boton-2 {
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.mixin-botones {
+  display: flex;
+  justify-content: center;
+}
+.mixin-botones .boton-2 {
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 25px;
+}
+.mixin-botones .boton-3 {
+  background-color: yellow;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-family: Arial;
+  margin: 25px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

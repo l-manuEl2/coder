@@ -1,0 +1,32 @@
+@mixin flex{
+    display: flex;
+    justify-content: center;
+}
+@mixin boton{
+    background-color: red;
+    text-decoration:none ;
+    color: white;
+    border-radius:15px ;
+    padding: 10px 25px;
+    
+
+ }
+ @mixin boton-variables ($bg-color, $color-texto, $padding, $b-radius, $fuente, $margin, $deco){
+    background-color:$bg-color ;
+    color:$color-texto ;
+    padding:$padding ;
+    border-radius:$b-radius ;
+    font-family: $fuente ;
+    margin: $margin;
+    text-decoration: $deco;
+ }
+ 
+ .mixin-botones{
+    @include flex;
+    .boton-2{
+        @include boton
+    }
+    .boton-3{
+        @include boton-variables(yellow, black,10px 15px , 15px, Arial, 25px, none )
+    }
+ }
