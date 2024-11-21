@@ -707,15 +707,30 @@ footer p {
   justify-content: center;
 }
 .section-botones .boton-1, .section-botones a:last-child {
-  background-color: blue;
+  background-image: linear-gradient(to right, yellow, red);
   padding: 15px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 5px;
   text-decoration: none;
+  transition: 2s;
 }
 .section-botones a:last-child {
   margin-left: 15px;
+}
+.section-botones a:last-child:hover {
+  transform: translate(120px, 95px) rotate(20deg) skew(15deg) scale(0.5);
+}
+
+.barra {
+  position: fixed;
+  left: 35px;
+  bottom: 50px;
+  width: 25%;
+  transition: 2s;
+}
+.barra:hover {
+  transform: rotate(360deg) translate(-20px);
 }
 
 .mixin-botones .boton-2 {
@@ -745,6 +760,78 @@ footer p {
   font-family: Arial;
   margin: 25px;
   text-decoration: none;
+}
+
+.container-gradiente {
+  border-radius: 5PX;
+  background-image: linear-gradient(top right);
+  margin: 35px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, white, yellow);
+}
+.container-gradiente div:first-child {
+  width: 350px;
+  margin-right: 35px;
+}
+.container-gradiente div:first-child h3 {
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+}
+.container-gradiente div:first-child p {
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-top: 15px;
+}
+.container-gradiente div:last-child {
+  background-color: rgb(0, 0, 0);
+  width: 450px;
+  padding: 25px 35px;
+  background-color: black;
+  transform: translateY(60px);
+  box-shadow: -3px 17px 61px -1px;
+  border-radius: 5PX;
+  transition: 3s;
+}
+.container-gradiente div:last-child h4 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+.container-gradiente div:last-child p {
+  margin: 15px 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 25px 0;
+}
+.container-gradiente div:last-child:hover {
+  transform: rotate(20deg);
+}
+
+@keyframes cambiar-color {
+  0% {
+    background-image: linear-gradient(to right, white, rgb(136, 136, 218));
+  }
+  50% {
+    background-image: linear-gradient(circle, #737fec, blue);
+  }
+  100% {
+    background-image: linear-gradient(to left, blue, rgb(88, 159, 241));
+  }
+}
+div h4 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-size: 2rem;
+  animation-name: cambiar-color;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2s;
 }
 
 /*# sourceMappingURL=style.css.map */
