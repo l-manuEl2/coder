@@ -18,6 +18,7 @@ body{
 }
 
 
+
 .titulo2{
     text-decoration: none;
   }
@@ -50,6 +51,28 @@ body{
     position: fixed;
     width: 100%;  
   }
+  .anuncio-2{
+    position: sticky;
+    margin: 2px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-image: url(../../img/fondo-gym.jpg);
+    padding:50px;
+    right: 100%;
+    ul{
+      li{
+        a{
+          text-decoration: none;
+          color: black;
+          background-color: orange;
+        }
+      }
+    }
+  }
+
 .anuncio{
     position: sticky;
     margin: 2px;
@@ -72,6 +95,7 @@ body{
   }
   .logo-whatsapp{
     position: fixed;
+    position: sticky;
     right: 15px;
     bottom: 25px;
   }
@@ -386,3 +410,61 @@ body{
       
   }
 }
+.galery-container{
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  img{
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    transition: 1s;
+  }
+}
+.galery-container{
+    img:hover{
+    margin: 25px;
+    font-size: 3rem;
+    
+  }
+}
+
+
+.hojas{
+  header{
+    background-image: url(black);
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  } 
+  
+}
+.hojas{
+  .color{
+    flex-direction: column;
+  }h1{
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 2rem;
+    font-weight: bold;
+    transition: 1s;
+  }
+}
+.hojas{
+  .color{
+    h1:hover{
+      font-size: 3rem;
+    }
+  }
+}
+
+
+
+
+
+

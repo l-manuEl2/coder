@@ -28,8 +28,85 @@ main h2:hover{
 main section img{
     transition: 1s;
 }
-main section img:hover{
-    width: 18rem;
+.main2 section img:hover{
+    width: 23rem;
 }
+h3{
+    transition: 1s;
+    
+}
+h3:hover{
+   font-size: 2rem;
+   
 
+
+}
+main{
+    section{
+      h3{
+        transition: 3s;
+      }
+    }
+  }
+  main{
+    section{
+      h3:hover{
+        background-color: gray;
+        border-radius: 5px;
+      }
+    }
+  }
+  main{
+   div{
+    h2{
+      color: white;
+    }
+    p{
+      color: white;
+    }
+    }
+  }
+  main{
+    div{
+      display: grid;
+      grid-template-columns: auto;
+      }
+  }
+  h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    label{
+      display: grid;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 15px;
+    }
+  }  
+form{
+  input{
+    transition: 1.5s;
+  }
+  input:focus{
+    background-color: lightblue;
+    padding: 15px;
+    color: rgb(253, 253, 253);
+  }
+}
+.hojas{
+  .color{
+    form{
+      input{
+        color: black;
+        font-weight: bolder;
+       
+        
+      }
+    }  
+  }
+}
 

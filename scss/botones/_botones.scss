@@ -26,9 +26,9 @@
 .barra{
     
     position: fixed;
-    left: 35px;
+    right: 35px;
     bottom: 50px ;
-    width: 25%;
+    width: 5%;
     transition: 2s;
     &:hover{
         transform: rotate(360deg) translate(-20px);
