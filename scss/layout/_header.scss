@@ -81,12 +81,12 @@ ul {
     }
 }
 h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:$fuente;
 }
 
 section{
     p{
-        font-family: Arial, Helvetica, sans-serif;
+        font-family:$fuente;
         margin: 5px;
 }
 }
@@ -127,6 +127,7 @@ header {
 }
 header{
     img{
+        
         display: flex;
         text-align: center;
         justify-content: center;
@@ -135,6 +136,26 @@ header{
         display: flex;
         text-align: center;
         justify-content: center;
+    }
+}
+.anuncio{
+    position: sticky;
+    margin: 2px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-color: rgb(231, 140, 2);
+    padding:5px;
+    right: 100%;
+    
+  }
+  .anuncio {
+    p{
+        text-align: center;
+        font-family:$fuente;
+        color:$negro;
     }
 }
 
