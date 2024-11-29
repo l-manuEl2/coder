@@ -647,7 +647,16 @@ header h1 {
   color: black;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 325px) {
+nav .encavesado ul li a {
+  background-image: url(../../img/barra-zeta.webp);
+}
+
+header .navegacion .barra-seta li a {
+  padding: 1rem;
+  background-image: linear-gradient(to, top, lightblue, blue);
+}
+
+@media screen and (min-width: 320px) and (max-width: 325px) {
   .videos {
     width: 100%;
   }
@@ -929,11 +938,6 @@ footer p {
   }
   .triceps {
     margin: 10px;
-  }
-}
-@media only screen and (min-width: 1201px) {
-  main div {
-    display: flex;
   }
 }
 .section-botones {

@@ -158,5 +158,29 @@ header{
         color:$negro;
     }
 }
+nav{
+    .encavesado{
+        ul{
+            li{
+                a{
+                    background-image: url(../../img/barra-zeta.webp);
+                }
+            }
+        }
+    }
+}
+header{
+    .navegacion{
+        .barra-seta{
+            li{
+                a{
+                   
+                   padding: 1rem; 
+                   background-image: linear-gradient(to, top, lightblue, blue);;
+                }
+            }
+        }
+    }
+}
 
-
+    
